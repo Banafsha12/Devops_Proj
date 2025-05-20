@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Banafsha12/Devops_Proj.git'
+                git branch: 'main', url: 'https://github.com/Banafsha12/Devops_Proj.git'
             }
         }
 
