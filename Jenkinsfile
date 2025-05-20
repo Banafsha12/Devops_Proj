@@ -16,13 +16,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t devops-node-app .'
+                bat 'docker build -t devops_proj .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d -p 3000:3000 devops-node-app'
+                bat 'docker run -d -p 3000:3000 devops_proj'
             }
         }
     }
